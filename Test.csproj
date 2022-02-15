@@ -1,0 +1,209 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0C1C7B38-37AB-42C6-A7F0-FD71F8B4D37F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Test</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NuGet.Frameworks, Version=6.0.0.280, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\NuGet.Frameworks.6.0.0\lib\net40\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\Task.CSVImportExport\v15\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="packages.config" />
+    <None Include="Task.CSVImportExport\bin\File\TaskUpload.csv" />
+    <None Include="Task.CSVImportExport\bin\roslyn\csc.exe.config" />
+    <None Include="Task.CSVImportExport\bin\roslyn\csc.rsp" />
+    <None Include="Task.CSVImportExport\bin\roslyn\csi.exe.config" />
+    <None Include="Task.CSVImportExport\bin\roslyn\csi.rsp" />
+    <None Include="Task.CSVImportExport\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <None Include="Task.CSVImportExport\bin\roslyn\Microsoft.Managed.Core.targets" />
+    <None Include="Task.CSVImportExport\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <None Include="Task.CSVImportExport\bin\roslyn\vbc.exe.config" />
+    <None Include="Task.CSVImportExport\bin\roslyn\vbc.rsp" />
+    <None Include="Task.CSVImportExport\bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="Task.CSVImportExport\bin\Task.CSVImportExport.dll.config" />
+    <None Include="Task.CSVImportExport\Content\bootstrap-theme.css.map" />
+    <None Include="Task.CSVImportExport\Content\bootstrap-theme.min.css.map" />
+    <None Include="Task.CSVImportExport\Content\bootstrap.css.map" />
+    <None Include="Task.CSVImportExport\Content\bootstrap.min.css.map" />
+    <None Include="Task.CSVImportExport\File\TaskUpload.csv" />
+    <None Include="Task.CSVImportExport\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Task.CSVImportExport\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Task.CSVImportExport\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Task.CSVImportExport\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Task.CSVImportExport\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Task.CSVImportExport\obj\Debug\Task.CSVImportExport.csproj.AssemblyReference.cache" />
+    <None Include="Task.CSVImportExport\obj\Debug\Task.CSVImportExport.csproj.CopyComplete" />
+    <None Include="Task.CSVImportExport\obj\Debug\Task.CSVImportExport.csproj.CoreCompileInputs.cache" />
+    <None Include="Task.CSVImportExport\packages.config" />
+    <None Include="Task.CSVImportExport\Scripts\jquery-3.4.1.min.map" />
+    <None Include="Task.CSVImportExport\Scripts\jquery-3.4.1.slim.min.map" />
+    <None Include="Task.CSVImportExport\Uploads\TaskUpload.csv" />
+    <None Include="Task.CSVImportExport\Views\Home\About.cshtml" />
+    <None Include="Task.CSVImportExport\Views\Home\Contact.cshtml" />
+    <None Include="Task.CSVImportExport\Views\Home\Index.cshtml" />
+    <None Include="Task.CSVImportExport\Views\Shared\Error.cshtml" />
+    <None Include="Task.CSVImportExport\Views\Shared\_Layout.cshtml" />
+    <None Include="Task.CSVImportExport\Views\Web.config" />
+    <None Include="Task.CSVImportExport\Views\_ViewStart.cshtml" />
+    <None Include="Task.CSVImportExport\Web.config" />
+    <None Include="Task.CSVImportExport\Web.Debug.config" />
+    <None Include="Task.CSVImportExport\Web.Release.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Task.CSVImportExport\bin\Antlr3.Runtime.dll" />
+    <Content Include="Task.CSVImportExport\bin\Antlr3.Runtime.pdb" />
+    <Content Include="Task.CSVImportExport\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="Task.CSVImportExport\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Task.CSVImportExport\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Task.CSVImportExport\bin\Newtonsoft.Json.dll" />
+    <Content Include="Task.CSVImportExport\bin\Newtonsoft.Json.xml" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\csc.exe" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\csi.exe" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.AppContext.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Console.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Net.Http.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\vbc.exe" />
+    <Content Include="Task.CSVImportExport\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Helpers.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Helpers.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Mvc.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Mvc.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Optimization.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Optimization.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Razor.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.Razor.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="Task.CSVImportExport\bin\System.Web.WebPages.xml" />
+    <Content Include="Task.CSVImportExport\bin\Task.CSVImportExport.dll" />
+    <Content Include="Task.CSVImportExport\bin\Task.CSVImportExport.pdb" />
+    <Content Include="Task.CSVImportExport\bin\WebGrease.dll" />
+    <Content Include="Task.CSVImportExport\Content\bootstrap-theme.css" />
+    <Content Include="Task.CSVImportExport\Content\bootstrap-theme.min.css" />
+    <Content Include="Task.CSVImportExport\Content\bootstrap.css" />
+    <Content Include="Task.CSVImportExport\Content\bootstrap.min.css" />
+    <Content Include="Task.CSVImportExport\Content\Site.css" />
+    <Content Include="Task.CSVImportExport\DBScripts\DataTable Creation.sql" />
+    <Content Include="Task.CSVImportExport\DBScripts\DB Creation.sql" />
+    <Content Include="Task.CSVImportExport\DBScripts\SP Create for Insert.sql" />
+    <Content Include="Task.CSVImportExport\favicon.ico" />
+    <Content Include="Task.CSVImportExport\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Task.CSVImportExport\Global.asax" />
+    <Content Include="Task.CSVImportExport\Images\excelicon.png" />
+    <Content Include="Task.CSVImportExport\obj\Debug\Task.CSVImportExport.csproj.FileListAbsolute.txt" />
+    <Content Include="Task.CSVImportExport\Scripts\bootstrap.js" />
+    <Content Include="Task.CSVImportExport\Scripts\bootstrap.min.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery-3.4.1.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery.validate.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery.validate.min.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Task.CSVImportExport\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Task.CSVImportExport\Scripts\modernizr-2.8.3.js" />
+    <Content Include="Task.CSVImportExport\Task.CSVImportExport.csproj" />
+    <Content Include="Task.CSVImportExport\Task.CSVImportExport.csproj.user" />
+    <Content Include="Task.CSVImportExport\Task.CSVImportExport.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Task.CSVImportExport\App_Start\BundleConfig.cs" />
+    <Compile Include="Task.CSVImportExport\App_Start\FilterConfig.cs" />
+    <Compile Include="Task.CSVImportExport\App_Start\RouteConfig.cs" />
+    <Compile Include="Task.CSVImportExport\BusinessLogic\ImportExcelData.cs" />
+    <Compile Include="Task.CSVImportExport\Controllers\HomeController.cs" />
+    <Compile Include="Task.CSVImportExport\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Task.CSVImportExport\Models\CustomerInfo.cs" />
+    <Compile Include="Task.CSVImportExport\Models\ImportExcel.cs" />
+    <Compile Include="Task.CSVImportExport\obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs" />
+    <Compile Include="Task.CSVImportExport\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Test\v15\" />
+    <Folder Include="Task.CSVImportExport\App_Data\" />
+    <Folder Include="Task.CSVImportExport\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
