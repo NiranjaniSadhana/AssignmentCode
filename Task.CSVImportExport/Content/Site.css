@@ -1,0 +1,106 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding:15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar-inverse {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: #fff;
+    border-color: #eeeeee;
+}
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+        font-size: medium;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #32668c;
+        font-weight: 700;
+    }
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover{
+        color: #32668c;
+    }
+article {
+    /* background-color: #a5c3c6; */
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+    padding: 15px;
+}
+.task-button-group .task-button {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-right: 16px;
+}
+
+.task-button__style-color, a.task-button__style-color, .task-button__style-nocolor, a.task-button__style-nocolor {
+    border: 1px solid #25282a;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.task-button, a.task-button {
+    text-decoration: none;
+    border-radius: 4px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.task-button__size-large, a.task-button__size-large {
+    padding: 6.5px 0px;
+    min-width: 135px;
+    max-width: 720px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.col_center {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+.row-centered {
+    text-align: center;
+}

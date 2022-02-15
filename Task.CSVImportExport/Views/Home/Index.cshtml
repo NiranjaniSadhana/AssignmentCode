@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container body-content">
+
+
+    @using (Html.BeginForm("Index", "Home",  FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+    <div class="demo-wrap">
+        @*<img class="demo-bg" src="/Images/aquarelle_blue.png" alt="">*@
+        @if (ViewBag.Success == true)
+        {
+        <div style="color:green">
+            <h4>Upload Successful</h4>
+        </div>
+        }
+        @if (ViewBag.Failure == true)
+        {
+            <div style="color:red">
+                <h4>Something went wrong. Please try again</h4>
+            </div>
+        }
+
+        <article style="position:center">
+
+
+            <div class="row ">
+                <div class="text-center">
+                    <div class="col-md-12">
+                        <section id="loginForm">
+                            <div class="rich-text">
+                                <div class="text-center">
+                                    <h2>Upload CSV File</h2>
+                                </div>
+                                <div class="html-text">
+                                    <p>
+                                        This functionality will use to Import and Export the CSV file. Please Download the Format of the Excel <a href="@Url.Action("DownloadFile","Home")">here.</a>
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="task-button-group text-center col_center">
+                                <div class="row row-centered">
+                                    <div class="col-md-3 form-group" style=" padding-right: 10rem;">
+                                        <input type="file" id="file" lang="en-us" class="form-control" name="FileUpload" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" style="width:max-content" />
+                                    </div>
+                                    <div class="col-md-1 form-group col_center">
+                                        <input type="submit" id="btnUpload" value="Upload Excel" class="task-button task-button__size-large task-button__style-color" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                You can fetch the customers here
+                            </p>
+                            <a href="@Url.Action("ExportExcel","Home")"><img src="~/Images/excelicon.png" /></a>
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </div>
+    }
+    </div>
